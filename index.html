@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Food Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .dishes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .dish {
+            width: 250px;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .dish img {
+            width: 100%;
+            height: auto;
+        }
+        .dish h3 {
+            margin: 10px 0;
+        }
+        form input, form textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>QuickBite</h1>
+    <p>Delicious food delivered fast & fresh!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Order Your Favorite Meals Now!</h2>
+    <p>Fast delivery. Great taste. Happy you.</p>
+</section>
+
+<section class="section" id="menu">
+    <h2>Featured Dishes</h2>
+    <div class="dishes">
+        <div class="dish">
+            <img src="https://source.unsplash.com/250x150/?burger" alt="Burger">
+            <h3>Classic Burger</h3>
+            <p>$5.99</p>
+        </div>
+        <div class="dish">
+            <img src="https://source.unsplash.com/250x150/?pizza" alt="Pizza">
+            <h3>Cheesy Pizza</h3>
+            <p>$8.99</p>
+        </div>
+        <div class="dish">
+            <img src="https://source.unsplash.com/250x150/?noodles" alt="Noodles">
+            <h3>Spicy Noodles</h3>
+            <p>$6.50</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>QuickBite is your go-to food delivery service offering delicious meals from top-rated restaurants right to your door.</p>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 QuickBite. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
